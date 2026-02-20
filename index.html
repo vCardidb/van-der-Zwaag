@@ -13,7 +13,7 @@
         
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: linear-gradient(135deg, #1a2f3f 0%, #2c3e50 100%);
+            background: linear-gradient(135deg, #0a1f2e 0%, #1a3b4f 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -29,16 +29,27 @@
             border-radius: 24px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             text-align: center;
-            border-top: 6px solid #e67e22;
+            border-top: 6px solid #2a6f8d;
+        }
+        
+        .logo-container {
+            background: #eef3f7;
+            padding: 15px 20px;
+            border-radius: 60px;
+            display: inline-block;
+            margin-bottom: 20px;
+            width: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
         
         .logo {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: 800;
-            color: #e67e22;
+            color: #1c4e6c;
             letter-spacing: 2px;
-            margin-bottom: 10px;
             text-transform: uppercase;
+            background: transparent;
+            padding: 0 10px;
         }
         
         .name {
@@ -51,7 +62,7 @@
         
         .title {
             font-size: 1.4rem;
-            color: #e67e22;
+            color: #2a6f8d;
             font-weight: 500;
             margin-bottom: 5px;
             text-transform: uppercase;
@@ -60,17 +71,17 @@
         
         .company {
             font-size: 1.3rem;
-            color: #2c3e50;
+            color: #1c4e6c;
             font-weight: 600;
             margin-bottom: 25px;
             padding-bottom: 15px;
-            border-bottom: 2px solid #f1f5f9;
+            border-bottom: 2px solid #e2f0f7;
         }
         
         .detail {
             margin: 25px 0;
             text-align: left;
-            background: #f8fafc;
+            background: #f0f7fc;
             padding: 20px;
             border-radius: 18px;
         }
@@ -90,13 +101,13 @@
         }
         
         .text {
-            color: #334155;
+            color: #2c3e50;
             word-break: break-word;
         }
         
         .label {
             font-weight: 600;
-            color: #1e293b;
+            color: #1c4e6c;
             margin-right: 8px;
         }
         
@@ -111,7 +122,7 @@
         }
         
         .website a {
-            color: #e67e22;
+            color: #2a6f8d;
             text-decoration: none;
             font-weight: 600;
             font-size: 1.4rem;
@@ -120,10 +131,11 @@
         
         .website a:hover {
             text-decoration: underline;
+            color: #1c4e6c;
         }
         
         .slogan {
-            color: #64748b;
+            color: #4a6b7f;
             font-style: italic;
             margin: 5px 0 20px;
             font-size: 1.1rem;
@@ -131,7 +143,7 @@
         
         .vcard-button {
             display: inline-block;
-            background: #e67e22;
+            background: #2a6f8d;
             color: white;
             text-decoration: none;
             padding: 16px 32px;
@@ -139,7 +151,7 @@
             font-size: 1.3rem;
             font-weight: 600;
             margin: 10px 0;
-            box-shadow: 0 8px 16px -4px rgba(230, 126, 34, 0.4);
+            box-shadow: 0 8px 16px -4px rgba(42, 111, 141, 0.4);
             transition: all 0.2s;
             width: 100%;
             border: none;
@@ -147,8 +159,8 @@
         }
         
         .vcard-button:hover {
-            background: #d35400;
-            box-shadow: 0 10px 20px -4px rgba(230, 126, 34, 0.6);
+            background: #1c4e6c;
+            box-shadow: 0 10px 20px -4px rgba(28, 78, 108, 0.5);
             transform: translateY(-2px);
         }
         
@@ -157,7 +169,7 @@
         }
         
         .hint {
-            color: #64748b;
+            color: #5f7d91;
             font-size: 0.9rem;
             margin-top: 20px;
         }
@@ -169,15 +181,20 @@
             .name {
                 font-size: 2rem;
             }
-            .company {
-                font-size: 1.1rem;
+            .logo {
+                font-size: 1.6rem;
+            }
+            .logo-container {
+                padding: 12px 16px;
             }
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <div class="logo">EMSSCHROTT</div>
+        <div class="logo-container">
+            <div class="logo">EMSSCHROTT</div>
+        </div>
         <h1 class="name">Gabe van der Zwaag</h1>
         <div class="title">VERTRIEB</div>
         <div class="company">Emsschrott GmbH & Co. KG</div>
