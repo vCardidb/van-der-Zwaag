@@ -226,29 +226,14 @@
         </div>
         <div class="slogan">Schnell.Einfach.Sauber.</div>
         
-        <button onclick="openVCard()" class="vcard-button">
+        <!-- HIER IST DIE KORREKTUR: Dateiname angepasst -->
+        <a href="van der Zwaag.vcf" class="vcard-button" rel="noopener noreferrer">
             ⬇️ Kontakt speichern (vCard)
-        </button>
+        </a>
         
         <div class="hint">
-            Klicken Sie hier, um die Visitenkarte direkt auf Ihrem Smartphone oder PC zu öffnen.
+            Auf iPhone: Ein Klick öffnet direkt die Kontakte-App.
         </div>
     </div>
-
-    <script>
-        function openVCard() {
-            // Für iPhones: Öffnet die vCard direkt im Kontakte-App
-            window.location.href = 'gabe-van-der-zwaag.vcf';
-            
-            // Fallback für ältere Geräte
-            setTimeout(function() {
-                // Wenn nach 1 Sekunde nichts passiert, versuche Download
-                if (document.hasFocus()) {
-                    // Das Gerät unterstützt kein direktes Öffnen
-                    console.log('vCard wird geöffnet...');
-                }
-            }, 1000);
-        }
-    </script>
 </body>
 </html>
